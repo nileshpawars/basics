@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hidden-xs {
+    display: none;
+}
+
+.centerall {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+header {
+    padding: 0px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+}
+
+.navbar-toggler {
+    cursor: pointer;
+    margin: 50px;
+}
+
+.navbar-toggler i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.navbar-close {
+    text-align: right;
+}
+
+.navbar-close i {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+nav {
+    position: fixed;
+    left: -400px;
+    top: 0;
+    height: 100vh;
+    width: 400px;
+    overflow-y: hidden;
+    z-index: 500;
+    background: #eeed28;
+    padding: 60px 50px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+
+nav.open {
+    left: 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: #3b424f;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.menucontact {
+    margin-top: 50px;
+}
+
+.menucontact .details {
+    margin-top: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+}
+
+.menucontact a {
+    color: #3b424f;
+    transition: all 1s;
+}
+
+.menucontact a:hover {
+    border-bottom: 1px solid;
+}
+
+.headersocial {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-size: 0.9rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.headersocial a {
+    color: #ffffff;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/*========== Section ==========*/
+section {
+    position: relative;
+}
+
+section.fullheight {
+    min-height: 600px;
+    height: 100vh;
+}
+
+.heading {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.heading h1 {
+    color: #EEED28;
+    font-size: 4rem;
+    line-height: normal;
+}
+
+.heading h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eeed28;
+    display: inline-block;
+    margin: 0 auto;
+    color: #3b424f;
+}
+
+.heading h3 {
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.typewrite {
+    text-align: center;
+    font-size: 3.5rem;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    top: 15%;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.tealbg {
+    background-color: #b9cbc1;
+}
+
+.tealbg .heading h2 {
+    color: #ffffff;
+}
+
+.yellowbg {
+    background-color: #eeed28;
+}
+
+.yellowbg .heading h2 {
+    border-bottom: 1px solid #3b424f;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.content .border-small {
+    background: black;
+    width: 250px;
+    display: inline-block;
+    height: 2px;
+    margin: 1rem auto;
+}
+
+.content p {
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.offwhite {
+    color: #ffffff;
+}
+
+/*========== Carousel ==========*/
+.content .bx-wrapper {
+    background: transparent;
+    border: 0;
+}
+
+.carousel-text {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.carousel-text .item p{
+    border-bottom: 2px solid #eeed28;
+    display: inline-block;
+    font-size: 3.5rem;
+    font-family: inherit;
+}
