@@ -27,13 +27,21 @@ $(document).ready(function() {
 
     $('main').css('margin-bottom', $('footer').outerHeight());
 
+
     $('nav ul').find('a').click(function(e){
         $('nav').removeClass('open');
         var $href = $(this).attr('href');
         var $anchor = $('#'+$href).offset();
-        $('body, html').animate({ scrollTop: $anchor.top });
+        if($href === 'letsconnect') {
+            $('body, html').animate({scrollTop: document.body.scrollHeight});
+        }
+        else {
+            $('body, html').animate({ scrollTop: $anchor.top });
+         }
         return false;
     });
+
+
 
     /****************Type Writer Animation***************/
     var TxtType = function(el, toRotate, period) {

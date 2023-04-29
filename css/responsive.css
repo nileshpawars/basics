@@ -1,8 +1,25 @@
 @media screen and (min-width: 1024px) {
+    body {
+        overflow-y: scroll;
+        scrollbar-color: #3b424f #C2D2E4;
+    }
+    ::-webkit-scrollbar {
+        width: 15px;
+        height: 15px;
+    }
+    
+    ::-webkit-scrollbar-track-piece  {
+        background-color: #C2D2E4;
+    }
+    
+    ::-webkit-scrollbar-thumb:vertical {
+        height: 30px;
+        background-color: #3b424f;
+    }
+
     .navbar-toggler {
         margin: 50px;
     }
-
 
     .headersocial {
         display: block;
