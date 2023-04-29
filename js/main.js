@@ -16,6 +16,25 @@ $(document).ready(function() {
         controls: false
     });
 
+    $(".carousel-testimonial").bxSlider({
+        mode: 'fade',
+        auto: true,
+        speed: 500,
+        pause: 4000,
+        hideControlOnEnd: true,
+        pager: ($(".carousel-testimonial>.item").length > 1) ? true: false,
+    });
+
+    $('main').css('margin-bottom', $('footer').outerHeight());
+
+    $('nav ul').find('a').click(function(e){
+        $('nav').removeClass('open');
+        var $href = $(this).attr('href');
+        var $anchor = $('#'+$href).offset();
+        $('body, html').animate({ scrollTop: $anchor.top });
+        return false;
+    });
+
     /****************Type Writer Animation***************/
     var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;

@@ -20,6 +20,14 @@ a {
     display: none;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.mx-4 {
+    margin-top: 40px;
+}
+
 .centerall {
     display: flex;
     align-items: center;
@@ -32,7 +40,7 @@ a {
 
 header {
     padding: 0px 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -42,7 +50,7 @@ header {
 
 .navbar-toggler {
     cursor: pointer;
-    margin: 50px;
+    margin: 15px;
 }
 
 .navbar-toggler i {
@@ -84,7 +92,7 @@ nav ul {
 
 nav ul li a {
     color: #3b424f;
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
@@ -117,6 +125,7 @@ nav ul li a {
     letter-spacing: 0.07em;
     color: #ffffff;
     text-transform: uppercase;
+    display: none;
 }
 
 .headersocial a {
@@ -124,8 +133,14 @@ nav ul li a {
 }
 
 .container {
-    width: 1170px;
+    width: calc(100% - 75px);
     margin: 0 auto;
+}
+
+main {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 350px;
 }
 
 /*========== Section ==========*/
@@ -136,11 +151,18 @@ section {
 section.fullheight {
     min-height: 600px;
     height: 100vh;
+    min-height: 480px;
+}
+
+section.variableheight {
+    padding-bottom: 20px;
 }
 
 .heading {
     text-align: center;
-    padding-top: 40px;
+    padding-top: 60px;
+    width: calc(100% - 75px);
+    margin: 0 auto;
 }
 
 .heading h1 {
@@ -171,9 +193,9 @@ section.fullheight {
 
 .typewrite {
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     position: relative;
-    max-width: 1000px;
+    max-width: 85%;
     margin: 0 auto;
     top: 15%;
     color: #ffffff;
@@ -188,6 +210,10 @@ section.fullheight {
     color: #ffffff;
 }
 
+.lighttealbg {
+    background: #c6e0d0;
+}
+
 .yellowbg {
     background-color: #eeed28;
 }
@@ -196,12 +222,16 @@ section.fullheight {
     border-bottom: 1px solid #3b424f;
 }
 
-.content {
-    text-align: center;
+.bluebg {
+    background-color: #01539c;
+}
+
+.offwhitebg  {
+    background-color: #ffffff;
 }
 
 .content h1 {
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-weight: 400;
 }
 
@@ -214,7 +244,10 @@ section.fullheight {
 }
 
 .content p {
-    font-size: 2rem;
+    font-size: 1rem;
+}
+
+.content p.tagline {
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -222,7 +255,7 @@ section.fullheight {
     color: #ffffff;
 }
 
-/*========== Carousel ==========*/
+/*========== Start Carousel ==========*/
 .content .bx-wrapper {
     background: transparent;
     border: 0;
@@ -236,6 +269,195 @@ section.fullheight {
 .carousel-text .item p{
     border-bottom: 2px solid #eeed28;
     display: inline-block;
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-family: inherit;
+}
+
+.testimonial .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.testimonial .bx-wrapper .bx-pager.bx-default-pager a.active, 
+.testimonial .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #EEED28;
+}
+/*========== End Carousel ==========*/
+
+.abouttext {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem;
+    padding: 50px 0;
+}
+
+.abouttext h3 {
+    font-size: 2rem;
+    padding-right: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.yellow {
+    color: #eeed28;
+}
+
+.abouttitle {
+    flex:  1;
+}
+
+.aboutdescription {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem;
+    flex:  2;
+}
+
+.aboutdescription p {
+    font-family: inherit;
+    font-size: 1rem;
+    color: inherit;
+    line-height: 1.6;
+}
+
+p.intro {
+    width: 100%;
+    margin: 2rem auto;
+    font-size: 1.3rem;
+}
+
+.clients p.title {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+}
+
+.clients-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 1rem;
+    max-width: 100%;
+    margin: 2rem auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-logo img {
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 1px 1px 10px 1px rgb(59, 66, 79, 0.3);
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex-sm {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.logo-block {
+    flex: 0 0 calc(50% - 2rem);
+    padding: 1rem;
+    box-shadow: 1px 1px 10px 1px rgb(59, 66, 79, 0.3);
+}
+
+.logo-block img {
+    width: 100%;
+    height: 50px;
+    object-fit: contain;
+}
+
+.testimonial-inner {
+    max-width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.testimonial-inner blockquote p {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.testimonial-inner .name p {
+    margin-top: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.03rem;
+}
+
+.testimonial-inner blockquote:before,
+.testimonial-inner blockquote:after {
+    content: open-quote;
+    position: absolute;
+    color: #eeed28;
+    font-size: 5rem;
+    font-style: normal;
+    line-height: 1;
+}
+
+.testimonial-inner blockquote::before {
+    content: open-quote;
+    top: -15px;
+    left: -35px;
+}
+
+.testimonial-inner blockquote::after {
+    content: close-quote;
+    bottom: 0px;
+    right: -30px;
+}
+
+footer {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    padding: 0px 0 60px 0;
+    color: #3b424f;
+}
+
+.footertext {
+    font-size: 1.2rem;
+    padding: 40px 0;
+    display: block;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+    font-weight: 700;
+    max-width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn-connect {
+    padding: 0.6rem 1.25rem;
+    font-family: inherit;
+    border: 1px solid;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    font-weight: 700;
+}
+
+.btn-connect:hover {
+    background-color: #b9cbc1;
+}
+
+p.contact {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+
+p.contact a {
+    color: #3b424f;
 }

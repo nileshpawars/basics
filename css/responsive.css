@@ -1,5 +1,100 @@
 @media screen and (min-width: 1024px) {
+    .navbar-toggler {
+        margin: 50px;
+    }
+
+
+    .headersocial {
+        display: block;
+    }
+
+    .heading {
+        padding-top: 40px;
+        width: auto;
+    }
+
+    .container {
+        width: 1170px;
+    }
+
     .hidden-xs {
         display: initial;
+    }
+
+    .twocol {
+        -webkit-column-count: 2;
+        -webkit-column-gap: 60px;
+    }
+
+    .aboutdescription, .abouttext {
+        flex-direction: row;
+    }
+
+    .d-flex-sm {
+        width: 500px;
+    }
+
+    .typewrite {
+        font-size: 3.5rem;
+        max-width: 1000px;
+    }
+
+    .content h1 {
+        font-size: 3.5rem;
+    }
+
+    .content p {
+        font-size: 2rem;
+    }
+
+    .aboutdescription p {
+        font-size: 1rem;
+    }
+
+    .abouttext h3 {
+        font-size: 2.2rem;
+    }
+
+    p.contact {
+        font-size: 1rem;
+    }
+
+    .carousel-text .item p {
+        font-size: 3.5rem;
+    }
+
+    p.intro {
+        max-width: 50%;
+        font-size: 1.3rem;
+    }
+
+    .clients-wrapper {
+        max-width: 85%;
+    }
+
+    .logo-block img {
+        height: 100px;
+    }
+
+    .testimonial-inner {
+        max-width: 50%;
+    }
+
+    .testimonial-inner blockquote:before, .testimonial-inner blockquote:after {
+        font-size: 6rem;
+    }
+
+    .testimonial-inner blockquote::before {
+        top: -20px;
+        left: -60px;
+    }
+
+    .testimonial-inner blockquote::after {
+        right: -50px;
+    }
+
+    .footertext {
+        font-size: 2.5rem;
+        max-width: 80%;
     }
 }
