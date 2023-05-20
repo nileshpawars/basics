@@ -7,20 +7,20 @@ $(document).ready(function() {
         $('nav').removeClass('open');
     })
 
-    $(".carousel").bxSlider({
-        mode: 'fade',
-        auto: true,
-        speed: 500,
-        pause: 2000,
-        pager: false,
-        controls: false
-    });
+    // $(".carousel").bxSlider({
+    //     mode: 'fade',
+    //     auto: true,
+    //     speed: 500,
+    //     pause: 2000,
+    //     pager: false,
+    //     controls: false
+    // });
 
     $(".carousel-testimonial").bxSlider({
         mode: 'fade',
-        auto: true,
         speed: 500,
         pause: 4000,
+        infiniteLoop: false,
         hideControlOnEnd: true,
         pager: ($(".carousel-testimonial>.item").length > 1) ? true: false,
     });
@@ -57,17 +57,18 @@ $(document).ready(function() {
     TxtType.prototype.tick = function() {
         var i = this.loopNum % this.toRotate.length;
         var fullTxt = this.toRotate[i];
-
         if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
+            jQuery('.typewrite').fadeOut();
+            this.txt = ''
         } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
+            jQuery('.typewrite').fadeIn();
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
 
         this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
 
         var that = this;
-        var delta = 200 - Math.random() * 100;
+        var delta = 120 - Math.random() * 100;
 
         if (this.isDeleting) { delta /= 2; }
 

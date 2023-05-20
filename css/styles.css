@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Ubuntu:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 
 * {
     margin: 0;
@@ -51,6 +51,7 @@ header {
 .navbar-toggler {
     cursor: pointer;
     margin: 15px;
+    display: inline-block;
 }
 
 .navbar-toggler i {
@@ -105,7 +106,8 @@ nav ul li a.active {
 
 .menucontact .details {
     margin-top: 50px;
-    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
 
@@ -123,7 +125,7 @@ nav ul li a.active {
     right: 30px;
     top: 30px;
     font-size: 0.9rem;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     letter-spacing: 0.07em;
     color: #3b424f;
@@ -135,9 +137,17 @@ nav ul li a.active {
     color: #3b424f;
 }
 
+.headersocial a:hover {
+    color: #000;
+}
+
 .container {
-    width: calc(100% - 75px);
+    width: calc(100% - 90px);
     margin: 0 auto;
+}
+
+.container-xs {
+    width: 75%;
 }
 
 main {
@@ -175,8 +185,8 @@ section.variableheight {
 }
 
 .heading h2 {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     letter-spacing: 0.07em;
     text-transform: uppercase;
     font-size: 1.4rem;
@@ -189,9 +199,15 @@ section.variableheight {
 
 .heading h3 {
     color: #ffffff;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     line-height: normal;
+}
+
+.subhead {
+    margin-top: 0.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .typewrite {
@@ -200,7 +216,7 @@ section.variableheight {
     position: relative;
     max-width: 85%;
     margin: 0 auto;
-    top: 15%;
+    top: 35%;
     color: #ffffff;
     font-weight: 600;
 }
@@ -251,12 +267,42 @@ section.variableheight {
 }
 
 .content p.tagline {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .offwhite {
     color: #ffffff;
 }
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+.services p {
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+
+.services p span {
+    display:block;
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #eeed28;
+    padding: 10px;
+    margin-right: 1rem;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.services p span img {
+    width: 30px
+}
+
+
 
 /*========== Start Carousel ==========*/
 .content .bx-wrapper {
@@ -317,6 +363,7 @@ section.variableheight {
     font-size: 1rem;
     color: inherit;
     line-height: 1.6;
+    margin-bottom: 1rem;
 }
 
 p.intro {
@@ -325,8 +372,20 @@ p.intro {
     font-size: 1.3rem;
 }
 
+.intro-title span {
+    display: inline-block;
+}
+
+.intro-title span.hidden-xs {
+    display: none;
+}
+
+.intro-title span::first-letter {
+    font-weight: 900;
+}
+
 .clients p.title {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem;
     font-weight: 500;
     letter-spacing: 0.07em;
@@ -389,7 +448,7 @@ p.intro {
 
 .testimonial-inner .name p {
     margin-top: 2rem;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 0.8rem;
     letter-spacing: 0.03rem;
 }
@@ -427,11 +486,11 @@ footer {
 }
 
 .footertext {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     padding: 40px 0;
     display: block;
     letter-spacing: 0.03em;
-    line-height: 1.2;
+    line-height: 1.4;
     font-weight: 700;
     max-width: 95%;
     margin: 0 auto;
@@ -453,14 +512,17 @@ footer {
 }
 
 p.contact {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 0.07em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
     text-transform: uppercase;
     margin: 2rem 0;
 }
 
 p.contact a {
     color: #3b424f;
+}
+
+p.contact a:hover {
+    color: #000;
 }

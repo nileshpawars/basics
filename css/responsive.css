@@ -34,7 +34,15 @@
         width: 1170px;
     }
 
+    .container-xs {
+        width: 768px;
+    }
+
     .hidden-xs {
+        display: initial;
+    }
+
+    .intro-title span.hidden-xs {
         display: initial;
     }
 
@@ -93,6 +101,16 @@
         height: 100px;
     }
 
+    .services {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services p {
+        font-size: 1rem;
+        color: #000;
+        font-weight: 500;
+    }
+
     .testimonial-inner {
         max-width: 50%;
     }
@@ -111,7 +129,7 @@
     }
 
     .footertext {
-        font-size: 2.5rem;
+        font-size: 1.25rem;
         max-width: 80%;
     }
 }
