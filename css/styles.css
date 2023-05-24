@@ -293,6 +293,7 @@ section.variableheight {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
+    text-align: left;
 }
 
 .services p {
@@ -399,13 +400,18 @@ p.intro {
     font-size: 1.3rem;
 }
 
+#intro .centerall {
+    margin-top: 5rem;
+}
+
 .intro-title {
-    max-width: 768px;
+    max-width: 142px;
     margin: 0 auto;
+    text-align: left;
 }
 
 .intro-title span {
-    display: inline-block;
+    display: block;
     opacity: 0;
     transition: opacity 0.5s;
 }

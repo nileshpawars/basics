@@ -57,6 +57,19 @@
         margin-top: 0;
     }
 
+    #intro .centerall {
+        margin-top: 0;
+    }
+
+    .intro-title {
+        max-width: 768px;
+        text-align: center;
+    }
+
+    .intro-title span {
+        display: inline-block;
+    }
+
     .intro-title span.hidden-xs {
         display: initial;
     }
