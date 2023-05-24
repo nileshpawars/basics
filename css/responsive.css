@@ -51,8 +51,18 @@
         display: initial;
     }
 
+    .centerall {
+        position: absolute;
+        top: 0;
+        margin-top: 0;
+    }
+
     .intro-title span.hidden-xs {
         display: initial;
+    }
+
+    .d-flex {
+        grid-gap: 2rem;
     }
 
     .twocol {
@@ -110,6 +120,11 @@
 
     .clients-wrapper {
         max-width: 85%;
+    }
+
+    .client-logo img {
+        width: 100px;
+        padding: 0.8rem;
     }
 
     .logo-block img {

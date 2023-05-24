@@ -47,7 +47,7 @@ $(document).ready(function() {
     var v2 = $('#intro').position().top - 100;
     var v1 = $(this).scrollTop();
         if( v1 > v2 ){
-        console.log('in');
+            $('.brand').fadeOut();
             setTimeout(function() {
                 $('.intro-title span').eq(0).css('opacity', 1);
             }, 500)
@@ -75,6 +75,9 @@ $(document).ready(function() {
             setTimeout(function() {
                 $('.tagline').animate({'opacity': 1}, 500);
             }, 3700)
+        }
+        else {
+            $('.brand').fadeIn();
         }
     });
     
