@@ -52,6 +52,7 @@ header {
     cursor: pointer;
     margin: 15px;
     display: inline-block;
+    vertical-align: middle;
 }
 
 .navbar-toggler i {
@@ -68,16 +69,25 @@ header {
     cursor: pointer;
 }
 
+.brand {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
 nav {
     position: fixed;
-    left: -400px;
+    left: -100%;
     top: 0;
     height: 100vh;
-    width: 400px;
+    width: 100%;
     overflow-y: hidden;
     z-index: 500;
     background: #eeed28;
-    padding: 60px 50px;
+    padding: 60px 40px;
     box-sizing: border-box;
     transition: all 0.5s;
 }
@@ -96,6 +106,11 @@ nav ul li a {
     font-weight: 700;
 }
 
+nav ul li a:hover {
+    color: #01539c;
+    border-bottom: 1px solid;
+}
+
 nav ul li a.active {
     color: #01539c;
 }
@@ -106,7 +121,7 @@ nav ul li a.active {
 
 .menucontact .details {
     margin-top: 50px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
 }
@@ -366,15 +381,35 @@ section.variableheight {
     margin-bottom: 1rem;
 }
 
+.twocol {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 2rem;
+}
+
+.col-1 img {
+    max-width: 100%;
+    border: 3px solid #3b424f;
+    display: block;
+}
+
 p.intro {
     width: 100%;
     margin: 2rem auto;
     font-size: 1.3rem;
 }
 
+.intro-title {
+    max-width: 768px;
+    margin: 0 auto;
+}
+
 .intro-title span {
     display: inline-block;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
+
 
 .intro-title span.hidden-xs {
     display: none;
@@ -525,4 +560,8 @@ p.contact a {
 
 p.contact a:hover {
     color: #000;
+}
+
+.bx-controls-direction{
+    display: none;
 }

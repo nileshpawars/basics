@@ -41,6 +41,37 @@ $(document).ready(function() {
         return false;
     });
 
+    
+
+    $(document).scroll(function(evt){
+    var v2 = $('#intro').position().top - 100;
+    var v1 = $(this).scrollTop();
+        if( v1 > v2 ){
+        console.log('in');
+            setTimeout(function() {
+                $('.intro-title span').eq(0).css('opacity', 1);
+            }, 500)
+            setTimeout(function() {
+                $('.intro-title span').eq(1).css('opacity', 1);
+            }, 1000)
+            setTimeout(function() {
+                $('.intro-title span').eq(2).css('opacity', 1);
+            }, 1500)
+            setTimeout(function() {
+                $('.intro-title span').eq(3).css('opacity', 1);
+            }, 2000)
+            setTimeout(function() {
+                $('.intro-title span').eq(4).css('opacity', 1);
+            }, 2500)
+            setTimeout(function() {
+                $('.intro-title span').eq(5).css('opacity', 1);
+            }, 3000)
+            setTimeout(function() {
+                $('.intro-title span').eq(6).css('opacity', 1);
+            }, 3500)
+        }
+    });
+    
 
 
     /****************Type Writer Animation***************/

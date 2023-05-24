@@ -18,7 +18,16 @@
     }
 
     .navbar-toggler {
-        margin: 50px;
+        margin: 50px 20px 50px 50px ;
+    }
+
+    nav {
+        padding: 60px 50px;
+        width: 400px;
+    }
+
+    .navbar-close {
+        margin-right: 0;
     }
 
     .headersocial {
@@ -47,8 +56,14 @@
     }
 
     .twocol {
-        -webkit-column-count: 2;
-        -webkit-column-gap: 60px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        grid-gap: 2rem;
+    }
+
+    .col-1 {
+        flex: 0 0 50%;
     }
 
     .aboutdescription, .abouttext {
@@ -131,5 +146,9 @@
     .footertext {
         font-size: 1.25rem;
         max-width: 80%;
+    }
+
+    .bx-controls-direction {
+        display: block;
     }
 }
