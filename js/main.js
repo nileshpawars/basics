@@ -62,13 +62,19 @@ $(document).ready(function() {
             }, 2000)
             setTimeout(function() {
                 $('.intro-title span').eq(4).css('opacity', 1);
-            }, 2500)
+            }, 2100)
             setTimeout(function() {
                 $('.intro-title span').eq(5).css('opacity', 1);
-            }, 3000)
+            }, 2600)
             setTimeout(function() {
                 $('.intro-title span').eq(6).css('opacity', 1);
-            }, 3500)
+            }, 3100)
+            setTimeout(function() {
+                $('.border-small').animate({'width': '250px'}, 500);
+            }, 3600)
+            setTimeout(function() {
+                $('.tagline').animate({'opacity': 1}, 500);
+            }, 3700)
         }
     });
     
