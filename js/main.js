@@ -80,6 +80,12 @@ $(document).ready(function() {
             $('.brand').fadeIn();
         }
     });
+
+    var $list = $(".services");
+
+    $list.children().detach().sort(function(a, b) {
+        return $(a).text().localeCompare($(b).text());
+    }).appendTo($list);
     
 
 

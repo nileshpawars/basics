@@ -17,8 +17,13 @@
         background-color: #3b424f;
     }
 
+    header {
+        display: flex;
+        align-items: center;
+    }
+
     .navbar-toggler {
-        margin: 50px 20px 50px 50px ;
+        margin: 0px 20px 0px 50px ;
     }
 
     nav {
@@ -30,8 +35,14 @@
         margin-right: 0;
     }
 
+    .menucontact .details {
+        font-size: 0.9rem;
+    }
+
     .headersocial {
         display: block;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .heading {

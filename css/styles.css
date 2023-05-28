@@ -121,9 +121,8 @@ nav ul li a.active {
 
 .menucontact .details {
     margin-top: 50px;
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
 }
 
 .menucontact a {
@@ -556,7 +555,6 @@ p.contact {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.7rem;
     font-weight: 500;
-    text-transform: uppercase;
     margin: 2rem 0;
 }
 
